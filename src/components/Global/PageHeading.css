@@ -1,0 +1,47 @@
+.pageHeading {
+    display: block;
+    padding: 15px; /* Padding around the heading and breadcrumb */
+    border-radius: 1px; /* Rounded corners for a softer look */
+    box-shadow: 1px 2px 1px rgb(235 235 235 / 10%); /* Subtle shadow for depth */
+    text-align: center;
+  }
+  
+  .pageHeading h2 {
+    font-size: 28px; /* Adjust heading size as needed */
+    margin-bottom: 1px; /* Space below heading */
+  }
+  
+  .pageHeading {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .pageHeading h2 {
+    font-size: 2rem; /* Default font size */
+    margin-bottom: 10px;
+  }
+  
+  .pageHeading .headingImage {
+    max-width: 100%; /* Ensure the image scales with the width of its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image */
+  }
+  
+  /* Adjustments for tablets and smaller screens */
+  @media (max-width: 768px) {
+    .pageHeading h2 {
+      font-size: 1.5rem; /* Smaller font size for tablets and smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .pageHeading h2 {
+      font-size: 1.25rem; /* Even smaller font size for mobile screens */
+    }
+    
+    .pageHeading {
+      margin: 15px 0; /* Adjust margin for smaller screens */
+    }
+  }
+  

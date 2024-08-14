@@ -1,0 +1,83 @@
+/* Basic button styles */
+.btn-group {
+    display: flex;
+    margin: 10px 0;
+  }
+  
+  .btn-group .btn {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .btn-group .btn:hover {
+    background-color: #e2e6ea;
+    border-color: #adb5bd;
+  }
+  
+  .btn-group .btn:active {
+    background-color: #d6d6d6;
+    border-color: #b0b0b0;
+  }
+  
+  /* Optional: Add spacing between buttons */
+  .btn-group .btn + .btn {
+    margin-left: 2px;
+  }
+  
+  /* Ensure the top bar takes full width and aligns items centrally */
+.header-top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Adjust logo size and margin for different screen sizes */
+.header-top-bar img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+@media (max-width: 992px) { /* For tablets and smaller screens */
+  .header-top-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-top-bar .col-lg-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .header-top-bar .btn-group {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 576px) { /* For mobile phones */
+  .header-top-bar {
+    padding: 10px;
+  }
+
+  .header-top-bar img {
+    max-width: 80%;
+  }
+
+  .btn-group button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .header-top-bar a {
+    font-size: 14px;
+  }
+}

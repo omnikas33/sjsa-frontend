@@ -1,0 +1,59 @@
+/* General Container for Chart Components */
+.chart-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* General Container for MahaData and IndiaPopulation Components */
+  .maha-data-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Flex container for charts */
+  .charts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Styles for individual charts */
+  .chart {
+    flex: 1 1 45%; /* Adjust to fit the available space */
+    min-width: 300px; /* Minimum width for responsiveness */
+    max-width: 500px; /* Maximum width */
+    height: 300px; /* Fixed height for charts */
+    position: relative;
+  }
+  
+  /* Media query for smaller screens */
+  @media (width <= 768px) {
+    .chart {
+      flex: 1 1 100%; /* Full width on smaller screens */
+      height: 250px; /* Adjust height for smaller screens */
+    }
+  }
+  
+  @media (width <= 480px) {
+    .chart {
+      min-width: 200px; /* Adjust minimum width for very small screens */
+      height: 200px; /* Adjust height for very small screens */
+    }
+  }
+  
+  /* Header Styles */
+  h2 {
+    color: #4e73df;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    color: #1cc88a;
+    margin-bottom: 10px;
+  }
+  

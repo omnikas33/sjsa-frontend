@@ -1,0 +1,30 @@
+/* General Styles */
+#main-content {
+    overflow-x: hidden;
+  }
+  
+  /* Base Animation */
+  .animate-on-scroll {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  /* Animation for Elements in View */
+  .animate-on-scroll.animate {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  /* Example of specific component styling */
+  #main-content .animate-on-scroll {
+    margin-bottom: 40px; /* Space between sections */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #main-content {
+      padding: 20px;
+    }
+  }
+  

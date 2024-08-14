@@ -1,0 +1,19 @@
+
+  .ashram-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .ashram-table th,
+  .ashram-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .ashram-table th {
+    background-color: #3578f5;
+    color: white;
+  }
+  

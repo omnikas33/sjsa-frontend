@@ -1,0 +1,16 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": ["stylelint-scss"],
+  "rules": {
+    "scss/at-rule-no-unknown": true,
+    "color-no-invalid-hex": true,
+    "declaration-colon-space-after": "always",
+    "indentation": 2,
+    "max-empty-lines": 1,
+    "no-duplicate-selectors": true,
+    "property-no-unknown": [true, {
+      "ignoreProperties": ["composes"]
+    }],
+    "selector-max-id": 1
+  }
+}

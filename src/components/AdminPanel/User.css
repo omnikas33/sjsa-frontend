@@ -1,0 +1,189 @@
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .register-title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .register-title::before,.registe-title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0;
+    background-color: royalblue;
+  }
+  
+  .register-title::before {
+    width: 18px;
+    height: 18px;
+    background-color: royalblue;
+  }
+  
+  .register-title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .register-message, .registe-signin {
+    color: rgb(88 87 87 / 82.2%);
+    font-size: 14px;
+  }
+  
+  .register-signin {
+    text-align: center;
+  }
+  
+  .register-signin a {
+    color: royalblue;
+  }
+  
+  .register-signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .register-form label {
+    position: relative;
+  }
+  
+  .register-form label .register-input {
+    width: 100%;
+    padding: 10px 10px 20px;
+    outline: 0;
+    border: 1px solid rgb(105 105 105 / 39.7%);
+    border-radius: 10px;
+  }
+  
+  .register-form label .register-input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .register-form label .register-input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .register-form label .register-input:focus + span,.registe-form label .register-input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .register-form label .register-input:valid + span {
+    color: green;
+  }
+  
+  .register-submit {
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+  .register-submit:hover {
+    background-color: rgb(56 90 194);
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
+  /* User.css */
+
+.user-management {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-list {
+  margin-top: 20px;
+  width: 80%;
+  max-width: 600px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+
+.user-list h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.user-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.user-list li:last-child {
+  border-bottom: none;
+}
+
+.user-list button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-list button:hover {
+  background-color: #c82333;
+}
+
+.user-list button:focus {
+  outline: none;
+}
